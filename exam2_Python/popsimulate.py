@@ -25,9 +25,9 @@ def reproduce_population(population):
     new_generation = []
     N = len(population)
     for i in range(N):
-        dad = np.random.randint(N)
-        mom = np.random.randint(N)
-        chr_mom = np.random.randint(2)
+        dad = numpy.random.randint(N)
+        mom = numpy.random.randint(N)
+        chr_mom = numpy.random.randint(2)
         offspring = (population[mom][chr_mom], population[dad][1 - chr_mom])
         new_generation.append(offspring)
     return new_generation
